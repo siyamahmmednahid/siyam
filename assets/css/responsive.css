@@ -1,0 +1,225 @@
+
+/*===============================================
+           Small screen & Smart phone
+===============================================*/
+@media(max-width:991px)
+{
+    
+    .sm-xs-margin-top-30 {
+        margin-top: 30px;
+    }
+
+    .sm-xs-margin-top-60 {
+        margin-top: 60px;
+    }
+
+    .shape {
+        width: 130vw;
+    }
+
+    a.backToHome {
+        right: 15px;
+    }
+
+    .services .item .content {
+        margin-bottom: 30px;
+    }
+
+    .testimonials .arrows {
+        top: 0;
+        right: 15px;
+        left: auto;
+    }
+
+
+    body.side-menu {
+        padding-left: 0;
+    }
+
+    .side-menu main,
+    .side-menu .sec_content .content__inner {
+        height: calc(100vh - 57px);
+    }
+
+    .side-menu main {
+        overflow: hidden;
+        top: 57px;
+    }
+
+    .side-left {
+        transform: translateX(100%);
+        left: auto;
+        right: 0;
+    }
+
+    .open-side-left {
+        transform: translateX(0);
+    }
+
+    .mob-menu {
+        display: block !important;
+    }
+
+    .mob-menu-overlay {
+        width: 100%;
+    }
+
+    .mob-menu-close {
+        width: 30px;
+        height: 30px;
+        padding: 0 9px;
+    }
+
+    .mob-menu-close:before {
+        display: block;
+    }
+
+
+
+}
+
+
+/*===============================================
+            Smart phone and tablets
+===============================================*/
+
+@media(max-width:767px)
+{
+
+    .xs-margin-top-12 {
+        margin-top: 12px;
+    }
+
+    .xs-margin-top-30 {
+        margin-top: 30px;
+    }
+
+    .navbar-nav {
+        margin-bottom: 0;
+    }
+
+    .navbar-default .navbar-collapse {
+        border: none;
+    }
+
+    .navbar-nav > li {
+        padding: 15px 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 10px;
+    }
+
+    .shape {
+        width: 150vw;
+    }
+
+    .contact .info .item:last-of-type p {
+        margin-bottom: 0;
+    }
+
+}
+
+@media(max-width:550px)
+{
+
+    .sec_title h2 {
+        font-size: 60px;
+    }
+
+    .sec_title h2:after {
+        bottom: 28px;
+    }
+
+    section#home .content---wrapper img {
+        width: 140px;
+        height: 140px;
+    }
+
+    section#home .content---wrapper h3 {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    section#home .content---wrapper h3:after {
+        bottom: 15px !important;
+        height: 6px !important;
+    }
+
+}
+
+
+/*===============================================
+            Medium screen & Large screen
+===============================================*/
+
+@media(min-width:992px) and (max-width:1500px)
+{
+
+  .side-menu .sec__content > .container {
+    padding: 0 5%;
+  }
+
+}
+
+
+/*===============================================
+            Medium screen
+===============================================*/
+
+@media(min-width:992px) and (max-width:1199px)
+{
+
+    .md-margin-top-30 {
+        margin-top: 30px;
+    }
+
+    .side-menu .testimonials .arrows {
+        top: 0;
+        right: 15px;
+        left: auto;
+    }
+
+}
+
+/*===============================================
+            Large screen
+===============================================*/
+
+@media(max-width:1200px)
+{
+
+}
+
+
+/*===============================================
+            Small screen
+===============================================*/
+
+@media(max-width:600px)
+{
+
+    .full--width {
+        width: 100%;
+    }
+
+    .footer .item {
+        text-align: center !important;
+    }
+
+    .footer .item:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .shape {
+        width: 200vw;
+    }
+
+}
+
+
+@media(max-width:991px)
+{
+
+}

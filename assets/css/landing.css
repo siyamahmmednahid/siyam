@@ -1,0 +1,119 @@
+body.landing {
+    overflow: auto !important;
+}
+ 
+
+/*Demo header*/
+
+.padding-top-110 {
+    margin-top: 110px;
+}
+
+.land_intro {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.land_intro .display-table {
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.land_intro h1 {
+    font-weight: 700;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 65px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+}
+
+.land_intro h3 {
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+
+.land_intro .about_btns a {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 18px 20px;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    min-width: 154px;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.land_intro .about_btns a:first-of-type {
+    margin-right: 30px;
+    color: #222;
+    background-color: #fafafa;
+}
+
+.land_intro .about_btns a:first-of-type:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.land_intro .about_btns a:last-of-type:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+
+/*Demo items*/
+.demo {
+    background-color: #eee;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.demo .item {
+    margin-bottom: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.demo h4 {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.demo .item:hover h4 {
+    color: #000;
+    font-weight: 600;
+}
+
+.demo .item:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+}
+
+.landing footer {
+    padding: 30px 0;
+}
+
+.landing footer p {
+    margin-bottom: 0;
+}

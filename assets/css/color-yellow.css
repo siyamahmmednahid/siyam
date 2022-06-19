@@ -1,0 +1,70 @@
+	/*Main Color*/
+	.loader,
+	.menu-social-icons a:hover,
+	a.active_item,
+	.menu_list a:hover,
+	.main-color,
+	.social-icons a:hover i,
+	section#home .job,
+	.btn,
+	button.btn,
+	.home h1.fit--text #typed,
+	.info-title:after,
+	.testimonial h5,
+	.resume .date i,
+	.resume .date span,
+	.testimonials .arrows span:hover,
+	.fun-facts span,
+	.services .font-icon i,
+	.portfolio .ul-filter li.active_filter,
+	.portfolio .item .info p,
+	.project_info span,
+	.ajax-popup a.demo {
+	    color: #ffb100;/*#fec007*/
+	}
+
+	.bttn_bg_color,
+	a.bttn:not(.bttn_bg_color):hover,
+	.sec_title h2:after,
+	.progress_bar,
+	.ajax-popup a.demo:hover,
+	.resume .item .content:after,
+	h3.subtitle:after,
+	.skills .skill div span,
+	.resume .date:after,
+	.resume .date:before,
+	.resume .item:after,
+	.resume .item:before,
+	.info span.icon:after,
+	.btn:hover:after,
+	button.btn:hover:after {
+	    background-color: #ffb100;
+	}
+
+	.bttn_bg_color,
+	a.bttn:not(.bttn_bg_color):hover,
+	section.pt-page:not(.home) .scroll__content,
+	.social-icons a:after,
+	.contact .contact_form .submit,
+	.testimonials .arrows span:hover,
+	.ajax-popup a.demo,
+	.btn:after,
+	button.btn:after,
+	.form-control:focus {
+	    border-color: #ffb100;
+	}
+
+	.sec_title,
+	.fun-facts .item,
+	.testi-content,
+	.testi-content:after {
+		border-bottom-color: #ffb100;
+	}
+
+	.testi-content:after {
+		border-left-color: #ffb100;
+	}
+
+	.resume .date:after {
+    background: linear-gradient(45deg, #ffb100 50%, rgba(255, 255, 255, 0) 50%);
+}
