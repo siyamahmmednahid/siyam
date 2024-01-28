@@ -145,7 +145,7 @@ img {
 .titleArea .title {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 32px;
+    margin-bottom: 44px;
 }
 .btn {
     display: inline-block;
@@ -613,6 +613,10 @@ textarea {
 }
 .footerContent {
     max-width: 260px;
+}
+.footerArea .socialMedia {
+    justify-content: flex-start;
+    margin-top: 24px;
 }
 .footerArea .title {
     margin-bottom: 24px;
