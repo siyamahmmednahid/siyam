@@ -127,7 +127,7 @@ img {
 } */
 .sectionLabel{
     font-weight: 300;
-    padding-left: 52px;
+    padding-left: 32px;
     position: relative;
     display: inline-block;
     margin-bottom: 12px;
@@ -138,7 +138,7 @@ img {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
+    width: 24px;
     height: 1px;
     background-color: var(--primaryColor);
 }
@@ -301,7 +301,7 @@ img {
 
 
 /* ===================== Skills Area ===================== */
-.skillsArea {
+.experienceArea {
     padding: 96px 48px;
     background-color: var(--shadeBgColor);
     background-image: url("images/bannerBg.jpeg");
@@ -309,7 +309,7 @@ img {
     background-attachment: fixed;
     position: relative;
 }
-.skillsArea::before {
+.experienceArea::before {
     content: "";
     position: absolute;
     left: 0;
@@ -320,41 +320,40 @@ img {
     opacity: 0.9;
     z-index: 0;
 }
-.skillsArea .title {
+.experienceArea .title {
     padding-bottom: 12px;
     margin-bottom: 32px;
     border-bottom: 1px solid var(--borderColor);
 }
-.skillsArea .row {
-    margin-bottom: 72px;
+.experienceArea .row {
     display: flex;
     gap: 56px;
 }
-.skillsArea .row .column {
+.experienceArea .row .column {
     width: calc(50% - 28px);
 }
-.skillsArea .items {
+.experienceArea .items {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-.skillsArea .item {
+.experienceArea .item {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.skillsArea .heading {
+.experienceArea .heading {
     display: flex;
     gap: 36px;
     justify-content: space-between;
 }
-.skillsArea .organization {
+.experienceArea .organization {
     font-size: 18px;
     font-weight: 500;
     color: var(--titleColor);
     width: calc(100% - 140px);
 }
-.skillsArea .duration {
+.experienceArea .duration {
     background: var(--primaryColor);
     color: var(--secondaryColor);
     padding: 0 8px;
@@ -365,28 +364,33 @@ img {
 
 
 
-/* ===================== Fun Fact Area ===================== */
-.funFactArea {
+/* ===================== Skills Area ===================== */
+.skillsArea {
     padding: 96px 48px;
-    background-color: var(--shadeBgColor);
 }
-.funFactArea .funFactItems {
+.skillsArea .skills {
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
+    gap: 24px;
 }
-.funFactArea .funFactItem {
-    width: calc(100% / 4 - 18px);
-    text-align: left;
+.skillsArea .skill {
+    width: calc(100% / 3 - 16px);
+    padding-left: 16px;
+    margin: 0;
+    position: relative;
 }
-.funFactArea .funFactContent {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.skillsArea .skill::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--contentColor);
+    border-radius: 50%;
 }
-.funFactArea .funFactCount {
-    font-size: 32px;
-}
+
 
 
 /* ===================== Services Area ===================== */
@@ -402,11 +406,10 @@ img {
 .serviceArea .serviceItem {
     width: calc(100% / 3 - 16px);
     background-color: var(--bgColor);
-    padding: 48px 48px 32px;
+    padding: 32px;
     transition: all 0.3s;
 }
 .serviceArea .serviceItem:hover {
-    /* background: var(--primaryColor); */
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -442,6 +445,8 @@ img {
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
     font-weight: 900;
+    line-height: 48px;
+    margin-top: 12px;
     color: transparent;
     -webkit-text-stroke: 1px var(--primaryColor);
     opacity: 0.3;
@@ -549,6 +554,32 @@ img {
 }
 
 
+
+/* ===================== Fun Fact Area ===================== */
+.funFactArea {
+    padding: 96px 48px;
+    background-color: var(--shadeBgColor);
+}
+.funFactArea .funFactItems {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.funFactArea .funFactItem {
+    width: calc(100% / 4 - 18px);
+    text-align: left;
+}
+.funFactArea .funFactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.funFactArea .funFactCount {
+    font-size: 32px;
+}
+
+
+
 /* ===================== Contact Area ===================== */
 .contactArea {
     padding: 96px 48px;
@@ -591,7 +622,6 @@ textarea {
     border: none;
     cursor: pointer;
 }
-
 
 
 
