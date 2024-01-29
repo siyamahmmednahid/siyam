@@ -3,6 +3,7 @@ let target_word_index = 0;
 let target_char_index = 0;
 const target_element = document.getElementById("typing");
 const toggle_btn = document.getElementById("toggle_btn");
+const sidebar_list = document.getElementById("sidebarList");
 console.log(target_element);
 
 function typeWord() {
@@ -26,6 +27,16 @@ function clearOutput() {
 
 toggle_btn.addEventListener("click", () => {
   document.body.classList.toggle("color_body");
+});
+
+sidebar_list.addEventListener("click", () => {
+  // remove class name from body
+  document.body.classList.remove("color_body");
+});
+
+// on scroll event
+window.addEventListener("scroll", () => {
+  document.body.classList.remove("color_body");
 });
 
 // Start the typing animation
