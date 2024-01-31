@@ -160,6 +160,18 @@ img {
     background-color: var(--titleColor);
     color: var(--whiteColor);
 }
+.socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 24px;
+}
+.socialMedia a,
+.socialMedia svg {
+    display: flex;
+    transition: all 0.3s;
+}
 
 /* ===================== Header ===================== */
 .sidebar .logo {
@@ -180,16 +192,9 @@ img {
 .sidebar .navMenu li:not(:last-child) {
     margin-bottom: 32px;
 }
-.socialMedia {
-    width: 100%;
-    display: flex;
+.sidebar .socialMedia {
     justify-content: center;
-    gap: 24px;
-}
-.socialMedia a,
-.socialMedia svg {
-    display: flex;
-    transition: all 0.3s;
+    margin-top: 0;
 }
 
 
@@ -592,6 +597,9 @@ img {
 .contactArea .contentColumn {
     width: calc(50% - 28px);
 }
+.personalDetails { 
+    margin: 32px 0;
+}
 .contactArea .inputRow {
     display: flex;
     gap: 32px;
@@ -611,7 +619,7 @@ input, textarea {
     font-weight: 300;
     background: transparent;
     color: var(--textColor);
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     transition: all 0.3s;
 }
 input:focus, textarea:focus {
@@ -645,10 +653,6 @@ textarea {
 }
 .footerContent {
     max-width: 260px;
-}
-.footerArea .socialMedia {
-    justify-content: flex-start;
-    margin-top: 24px;
 }
 .footerArea .title {
     margin-bottom: 24px;
