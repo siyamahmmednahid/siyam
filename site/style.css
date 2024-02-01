@@ -88,7 +88,7 @@ img {
     background: var(--bgColor);
 }
 .sidebar {
-    width: 400px;
+    width: 360px;
     padding: 48px;
     height: 100vh;
     background: var(--bgColor);
@@ -102,7 +102,7 @@ img {
     box-shadow: var(--boxShadow);
 }
 .content {
-    width: calc(100% - 400px);
+    width: calc(100% - 360px);
     margin: 0 0 0 auto;
 }
 .container {
@@ -164,7 +164,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 32px;
     margin-top: 24px;
 }
 .socialMedia a,
@@ -244,8 +244,7 @@ img {
 .heroArea {
     background-image: url("images/bannerBg.jpeg");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: right;
@@ -646,10 +645,10 @@ textarea {
     flex-wrap: wrap;
 }
 .contentRow .footerColumn:first-child {
-    width: calc(50% - 32px);
+    width: calc(50% - 16px);
 }
 .contentRow .footerColumn {
-    width: calc(25% - 32px);
+    width: calc(25% - 16px);
 }
 .footerContent {
     max-width: 260px;
