@@ -172,6 +172,13 @@ img {
     display: flex;
     transition: all 0.3s;
 }
+.socialMedia path {
+    fill: var(--titleColor);
+    transition: all 0.3s;
+}
+.socialMedia a:hover path {
+    fill: var(--primaryColor);
+}
 
 /* ===================== Header ===================== */
 .sidebar .logo {
@@ -252,7 +259,7 @@ img {
     padding: 48px;
 }
 .heroArea .caption {
-    width: calc(100% - 48px);
+    width: 100%;
     max-width: 540px;
     padding: 32px;
     background-color: var(--bgColor);
@@ -287,17 +294,21 @@ img {
     display: flex;
     gap: 56px;
 }
+.aboutArea .btn {
+    margin-top: 32px;
+}
+.aboutArea .aboutImage {
+    max-width: 400px;
+    width: 100%;
+}
 .aboutArea .aboutImage img {
-    max-width: unset;
-    width: 400px;
-    height: 460px;
-    object-fit: cover;
+    width: 100%;
 }
 .aboutArea .personalDetails {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
-    margin: 32px 0;
+    margin: 32px 0 0;
 }
 .aboutArea .personalDetails li {
     width: calc(50% - 16px);
@@ -389,8 +400,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 7px;
     width: 6px;
     height: 6px;
     background-color: var(--contentColor);
@@ -596,9 +606,6 @@ img {
 .contactArea .contentColumn {
     width: calc(50% - 28px);
 }
-.personalDetails { 
-    margin: 32px 0;
-}
 .contactArea .inputRow {
     display: flex;
     gap: 32px;
@@ -708,5 +715,67 @@ textarea {
     .color_body .content {
         width: calc(100% + 300px);
         transform: translateX(300px);
+    }
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+    .heroArea {
+        padding: 32px;
+    }
+    .heroArea .caption .title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+
+
+    .aboutArea,
+    .experienceArea,
+    .skillsArea,
+    .serviceArea,
+    .workArea,
+    .caseStudyArea,
+    .funFactArea,
+    .contactArea,
+    .footerArea {
+        padding: 48px 32px;
+    }
+    .aboutArea .container {
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+    .aboutArea .personalDetails {
+        gap: 16px;
+    }
+    .aboutArea .personalDetails li {
+        width: calc(50% - 8px);
+    }
+
+
+
+    .experienceArea .row {
+        gap: 36px;
+    }
+    .experienceArea .row .column {
+        width: calc(50% - 18px);
+    }
+
+
+
+    .skillsArea .skill {
+        width: calc(100% / 2 - 12px);
+    }
+}
+
+
+
+@media only screen and (max-width: 639px) {
+    .skillsArea .skills {
+        gap: 20px;
+    }
+    .skillsArea .skill {
+        width: 100%;
     }
 }
