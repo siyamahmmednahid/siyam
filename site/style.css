@@ -80,6 +80,26 @@ img {
     max-width: 100%;
     height: auto;
 }
+input, textarea {
+    width: 100%;
+    padding: 0 0 16px;
+    border: none;
+    border-bottom: 1px solid var(--borderColor);
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 300;
+    background: transparent;
+    color: var(--textColor);
+    margin-bottom: 32px;
+    transition: all 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: var(--primaryColor);
+}
+textarea {
+    height: 120px;
+}
 
 
 
@@ -552,12 +572,12 @@ img {
 .caseStudyArea .caseStudyItems {
     display: flex;
     gap: 24px;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 .caseStudyArea .caseStudyItem {
     display: flex;
     flex-wrap: wrap;
-    width: calc(50% - 12px);
+    width: calc(100% / 3 - 16px);
     transition: all 0.3s;
     position: relative;
 }
@@ -601,6 +621,7 @@ img {
     padding: 96px 48px;
 }
 .contactArea .contentRow {
+    display: flex;
     gap: 56px;
 }
 .contactArea .contentColumn {
@@ -614,26 +635,6 @@ img {
 .contactArea .inputRow .formGroup {
     width: calc(50% - 16px);
 }
-input, textarea {
-    width: 100%;
-    padding: 0 0 16px;
-    border: none;
-    border-bottom: 1px solid var(--borderColor);
-    border-radius: 0;
-    outline: none;
-    font-size: 14px;
-    font-weight: 300;
-    background: transparent;
-    color: var(--textColor);
-    margin-bottom: 32px;
-    transition: all 0.3s;
-}
-input:focus, textarea:focus {
-    border-color: var(--primaryColor);
-}
-textarea {
-    height: 120px;
-}
 .contactArea .btn {
     border: none;
     cursor: pointer;
@@ -646,18 +647,18 @@ textarea {
     padding: 96px 48px;
     background-color: var(--shadeBgColor);
 }
-.contentRow {
+.footerArea .contentRow {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
-.contentRow .footerColumn:first-child {
+.footerArea .contentRow .footerColumn:first-child {
     width: calc(50% - 16px);
 }
-.contentRow .footerColumn {
+.footerArea .contentRow .footerColumn {
     width: calc(25% - 16px);
 }
-.footerContent {
+.footerArea .footerContent {
     max-width: 260px;
 }
 .footerArea .title {
@@ -716,11 +717,38 @@ textarea {
         width: calc(100% + 300px);
         transform: translateX(300px);
     }
+
+
+
+    .serviceArea .serviceItem {
+        padding: 28px;
+    }
+    .serviceArea .serviceIcon svg {
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+
+
+
+    .footerArea .contentRow .footerColumn:first-child {
+        width: calc(40% - 16px);
+    }
+    .footerArea .contentRow .footerColumn {
+        width: calc(30% - 16px);
+    }
 }
 
 
 
 @media only screen and (max-width: 1023px) {
+    .titleArea .title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+
+
+
     .heroArea {
         padding: 32px;
     }
@@ -731,15 +759,8 @@ textarea {
 
 
 
-    .aboutArea,
-    .experienceArea,
-    .skillsArea,
-    .serviceArea,
-    .workArea,
-    .caseStudyArea,
-    .funFactArea,
-    .contactArea,
-    .footerArea {
+    .aboutArea, .experienceArea, .skillsArea, .serviceArea,
+    .workArea, .caseStudyArea, .funFactArea, .contactArea, .footerArea {
         padding: 48px 32px;
     }
     .aboutArea .container {
@@ -767,15 +788,62 @@ textarea {
     .skillsArea .skill {
         width: calc(100% / 2 - 12px);
     }
+
+
+
+    .serviceArea .serviceItem,
+    .workArea .workItem,
+    .caseStudyArea .caseStudyItem {
+        width: calc(100% / 2 - 12px);
+    }
+
+
+
+    .footerArea .contentRow {
+        gap: 36px;
+    }
+    .footerArea .contentRow .footerColumn:first-child,
+    .footerArea .contentRow .footerColumn {
+        width: 100%;
+    }
 }
 
 
 
 @media only screen and (max-width: 639px) {
+    .aboutArea .aboutImage {
+        max-width: 100%;
+    }
+
+
+
+    .experienceArea .row {
+        flex-wrap: wrap;
+    }
+    .experienceArea .row .column {
+        width: 100%;
+    }
+
+
+
     .skillsArea .skills {
         gap: 20px;
     }
     .skillsArea .skill {
+        width: 100%;
+    }
+
+
+
+    .serviceArea .serviceItem {
+        width: 100%;
+        padding: 24px;
+    }
+
+
+
+    .workArea .workItem,
+    .caseStudyArea .caseStudyItem {
         width: 100%;
     }
 }
