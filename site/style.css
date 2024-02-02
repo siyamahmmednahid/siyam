@@ -98,7 +98,7 @@ input:focus, textarea:focus {
     border-color: var(--primaryColor);
 }
 textarea {
-    height: 120px;
+    height: 100px;
 }
 
 
@@ -844,6 +844,16 @@ textarea {
 
     .workArea .workItem,
     .caseStudyArea .caseStudyItem {
+        width: 100%;
+    }
+
+
+
+    .contactArea .contentRow {
+        gap: 56px;
+        flex-wrap: wrap;
+    }
+    .contactArea .contentColumn {
         width: 100%;
     }
 }
