@@ -12,6 +12,15 @@
 
 
     --boxShadow: 0 0 30px rgba(0, 0, 0, 0.05);
+
+
+
+    --headingSizeLg: 36px;
+    --headingSizeMd: 32px;
+    --headingSizeSm: 24px;
+    --titleSizeLg: 18px;
+    --titleSizeSm: 16px;
+    --contentSize: 14px;
 }
 @media (prefers-color-scheme: dark) {
     /* :root {
@@ -43,7 +52,7 @@ h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
 }
 a {
-    font-size: 14px;
+    font-size: var(--contentSize);
     text-decoration: none;
     color: var(--titleColor);
     transition: all 0.3s;
@@ -55,11 +64,11 @@ a:hover {
 p, span {
     color: var(--contentColor);
     margin-top: 0;
-    font-size: 14px;
+    font-size: var(--contentSize);
     line-height: 24px;
 }
 strong {
-    font-size: 14px;
+    font-size: var(--contentSize);
     font-weight: 500;
     color: var(--titleColor);
 }
@@ -69,7 +78,7 @@ ul {
     margin: 0;
 }
 li {
-    font-size: 14px;
+    font-size: var(--contentSize);
     color: var(--contentColor);
     margin: 0 0 15px 0;
 }
@@ -87,7 +96,7 @@ input, textarea {
     border-bottom: 1px solid var(--borderColor);
     border-radius: 0;
     outline: none;
-    font-size: 14px;
+    font-size: var(--contentSize);
     font-weight: 300;
     background: transparent;
     color: var(--textColor);
@@ -165,7 +174,7 @@ textarea {
     background-color: var(--primaryColor);
 }
 .titleArea .title {
-    font-size: 32px;
+    font-size: var(--headingSizeMd);
     font-weight: 500;
     margin-bottom: 44px;
 }
@@ -286,13 +295,13 @@ textarea {
     color: var(--titleColor);
 }
 .heroArea .caption .title {
-    font-size: 36px;
+    font-size: var(--headingSizeLg);
     font-weight: 500;
     margin-bottom: 16px;
 }
 .heroArea .caption .subTitle {
     color: var(--textColor);
-    font-size: 16px;
+    font-size: var(--titleSizeSm);
     font-weight: 500;
     line-height: 28px;
     display: flex;
@@ -811,6 +820,9 @@ textarea {
 
 
 @media only screen and (max-width: 639px) {
+    .aboutArea .personalDetails li {
+        width: 100%;
+    }
     .aboutArea .aboutImage {
         max-width: 100%;
     }
