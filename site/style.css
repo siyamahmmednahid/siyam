@@ -14,13 +14,15 @@
     --boxShadow: 0 0 30px rgba(0, 0, 0, 0.05);
 
 
-
     --headingSizeLg: 36px;
     --headingSizeMd: 32px;
     --headingSizeSm: 24px;
     --titleSizeLg: 18px;
     --titleSizeSm: 16px;
     --contentSize: 14px;
+    --contentSizeSm: 12px;
+
+    --sectionPadding: 96px 48px;
 }
 @media (prefers-color-scheme: dark) {
     /* :root {
@@ -315,7 +317,7 @@ textarea {
 
 /* ===================== About Area ===================== */
 .aboutArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
 }
@@ -348,7 +350,7 @@ textarea {
 
 /* ===================== Skills Area ===================== */
 .experienceArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
     background-image: url("images/bannerBg.jpeg");
     background-size: cover;
@@ -386,15 +388,16 @@ textarea {
 .experienceArea .item {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 .experienceArea .heading {
     display: flex;
-    gap: 36px;
+    gap: 12px;
     justify-content: space-between;
+    align-items: center;
 }
 .experienceArea .organization {
-    font-size: 18px;
+    font-size: var(--titleSizeSm);
     font-weight: 500;
     color: var(--titleColor);
     width: calc(100% - 140px);
@@ -403,16 +406,15 @@ textarea {
     background: var(--primaryColor);
     color: var(--secondaryColor);
     padding: 0 8px;
-    font-size: 12px;
+    font-size: var(--contentSizeSm);
     max-height: 24px;
-    margin-top: 4px;
 }
 
 
 
 /* ===================== Skills Area ===================== */
 .skillsArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
 }
 .skillsArea .skills {
     display: flex;
@@ -440,7 +442,7 @@ textarea {
 
 /* ===================== Services Area ===================== */
 .serviceArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
 .serviceArea .serviceItems {
@@ -501,7 +503,7 @@ textarea {
 
 /* ===================== Work Area ===================== */
 .workArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
 }
 .workArea .workItems {
     display: flex;
@@ -535,7 +537,7 @@ textarea {
     opacity: 1;
 }
 .workArea .workItem .caption .workTitle {
-    font-size: 24px;
+    font-size: var(--headingSizeSm);
     font-weight: 500;
     border-bottom: 1px solid var(--secondaryColor);
     padding-bottom: 12px;
@@ -549,7 +551,7 @@ textarea {
 
 /* ===================== Freelance Area ===================== */
 .freelanceArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     background-image: url("images/bannerBg.jpeg");
     background-size: cover;
     background-attachment: fixed;
@@ -576,7 +578,7 @@ textarea {
 
 /* ===================== Case Study Area ===================== */
 .caseStudyArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
 }
 .caseStudyArea .caseStudyItems {
     display: flex;
@@ -595,14 +597,16 @@ textarea {
 }
 .caseStudyArea .caseStudyLabel {
     margin: 0 0 6px;
-    font-size: 14px;
+}
+.caseStudyArea .caseStudyTitle {
+    font-size: var(--titleSizeLg);
 }
 
 
 
 /* ===================== Fun Fact Area ===================== */
 .funFactArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
 .funFactArea .funFactItems {
@@ -620,14 +624,14 @@ textarea {
     gap: 12px;
 }
 .funFactArea .funFactCount {
-    font-size: 32px;
+    font-size: var(--headingSizeMd);
 }
 
 
 
 /* ===================== Contact Area ===================== */
 .contactArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
 }
 .contactArea .contentRow {
     display: flex;
@@ -653,7 +657,7 @@ textarea {
 
 /* ===================== Footer Area ===================== */
 .footerArea {
-    padding: 96px 48px;
+    padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
 .footerArea .contentRow {
@@ -683,7 +687,7 @@ textarea {
     margin: 0;
 }
 .socketArea p {
-    font-size: 12px;
+    font-size: var(--contentSizeSm);
     font-weight: 300;
     margin: 0;
     padding: 12px 0;
@@ -751,6 +755,11 @@ textarea {
 
 
 @media only screen and (max-width: 1023px) {
+    :root {
+        --sectionPadding: 48px 32px;
+    }
+
+
     .titleArea .title {
         font-size: 24px;
         margin-bottom: 32px;
@@ -768,10 +777,6 @@ textarea {
 
 
 
-    .aboutArea, .experienceArea, .skillsArea, .serviceArea,
-    .workArea, .caseStudyArea, .funFactArea, .contactArea, .footerArea {
-        padding: 48px 32px;
-    }
     .aboutArea .container {
         flex-wrap: wrap;
         gap: 36px;
@@ -820,6 +825,11 @@ textarea {
 
 
 @media only screen and (max-width: 639px) {
+    :root {
+        --sectionPadding: 40px 24px;
+    }
+
+
     .aboutArea .personalDetails li {
         width: 100%;
     }
@@ -866,6 +876,14 @@ textarea {
         flex-wrap: wrap;
     }
     .contactArea .contentColumn {
+        width: 100%;
+    }
+    .contactArea .inputRow {
+        gap: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contactArea .inputRow .formGroup {
         width: 100%;
     }
 }
