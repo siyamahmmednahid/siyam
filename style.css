@@ -243,13 +243,16 @@ textarea {
 .navigator {
     height: 48px;
     width: 48px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
     border-radius: 50%;
     top: 24px;
-    left: 324px;
+    left: 24px;
     display: none;
     z-index: 999;
+}
+.activeMenu .navigator {
+    left: 324px;
 }
 .navigator .shape {
     width: 24px;
@@ -667,6 +670,10 @@ textarea {
 .contactArea .btn {
     border: none;
     cursor: pointer;
+}
+#submissionStatus {
+    color: var(--primaryColor);
+    margin: 24px 0 0;
 }
 
 

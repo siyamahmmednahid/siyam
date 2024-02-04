@@ -56,7 +56,7 @@ var form = document.getElementById("contactForm");
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("my-form-status");
+      var status = document.getElementById("submissionStatus");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
