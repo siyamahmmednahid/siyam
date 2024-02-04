@@ -34,7 +34,9 @@
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
@@ -131,6 +133,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--boxShadow);
+    z-index: 9;
 }
 .content {
     width: calc(100% - 360px);
@@ -264,14 +267,14 @@ textarea {
 .navigator .shape:last-child {
     top: calc(50% + 8px);
 }
-.color_body .navigator .shape:first-child {
+.activeMenu .navigator .shape:first-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-.color_body .navigator .shape:nth-child(2) {
+.activeMenu .navigator .shape:nth-child(2) {
     width: 0;
 }
-.color_body .navigator .shape:last-child {
+.activeMenu .navigator .shape:last-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -650,6 +653,9 @@ textarea {
 .contactArea .contentColumn {
     width: calc(50% - 28px);
 }
+.contactArea .personalDetails {
+    margin: 32px 0;
+}
 .contactArea .inputRow {
     display: flex;
     gap: 32px;
@@ -734,10 +740,10 @@ textarea {
         width: 100%;
         transition: all 0.3s;
     }
-    .color_body .sidebar {
+    .activeMenu .sidebar {
         margin-left: 0;
     }
-    .color_body .content {
+    .activeMenu .content {
         width: calc(100% + 300px);
         transform: translateX(300px);
     }
@@ -767,7 +773,7 @@ textarea {
 
 @media only screen and (max-width: 1023px) {
     :root {
-        --sectionPadding: 48px 32px;
+        --sectionPadding: 64px 32px;
     }
 
 
@@ -847,7 +853,7 @@ textarea {
 
 @media only screen and (max-width: 639px) {
     :root {
-        --sectionPadding: 40px 24px;
+        --sectionPadding: 48px 24px;
     }
 
 
