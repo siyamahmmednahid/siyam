@@ -286,12 +286,7 @@ textarea {
 
 /* ===================== Hero Area ===================== */
 .heroArea {
-    background-image: url("images/mainBannerBG.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url("images/mainBannerBG.png") no-repeat center center / contain;
     background-color: var(--shadeBgColor);
     height: 100vh;
     display: flex;
@@ -362,9 +357,7 @@ textarea {
 .experienceArea {
     padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
-    background-image: url("images/bannerBg.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
+    background: url("images/bannerBg.jpeg") no-repeat center center / cover fixed;
     position: relative;
 }
 .experienceArea::before {
@@ -564,9 +557,7 @@ textarea {
 /* ===================== Freelance Area ===================== */
 .freelanceArea {
     padding: var(--sectionPadding);
-    background-image: url("images/bannerBg.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
+    background: url("images/bannerBg.jpeg") no-repeat center center / cover fixed;
     text-align: center;
     position: relative;
 }
