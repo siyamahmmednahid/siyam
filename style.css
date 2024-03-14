@@ -783,6 +783,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    max-width: 480px;
 }
 .bannerArea .breadcrumb {
     display: flex;
@@ -790,11 +791,23 @@ textarea {
     margin-bottom: 12px;
 }
 .bannerArea .breadcrumb a {
-    font-size: var(--contentSize);
+    font-size: var(--contentSizeSm);
     color: var(--contentColor);
+    line-height: normal;
 }
 .bannerArea .breadcrumb a:hover {
     color: var(--primaryColor);
+}
+.bannerArea .breadcrumb span {
+    font-size: var(--contentSizeSm);
+    color: var(--contentColor);
+    line-height: normal;
+}
+.bannerArea .title {
+    font-size: var(--headingSizeMd);
+    margin-bottom: 12px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--borderColor);
 }
 
 
@@ -813,6 +826,19 @@ textarea {
 }
 .projectDetailsArea .projectImages .projectImage img {
     width: 100%;
+}
+
+
+
+.projectNavigationArea {
+    padding: var(--sectionPadding);
+}
+.projectNavigationArea .contentRow {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid var(--borderColor);
 }
 
 
