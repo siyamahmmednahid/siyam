@@ -24,6 +24,7 @@
 
     --sectionPadding: 96px 48px;
 }
+
 @media (prefers-color-scheme: dark) {
     /* :root {
         --titleColor: #FFFFFF;
@@ -37,11 +38,13 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -49,51 +52,65 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     margin: 0;
     padding: 0;
     font-weight: 500;
     font-family: 'Roboto Slab', serif;
 }
+
 a {
     font-size: var(--contentSize);
     text-decoration: none;
     color: var(--titleColor);
     transition: all 0.3s;
 }
+
 a:hover {
     text-decoration: none;
     color: var(--primaryColor);
 }
-p, span {
+
+p,
+span {
     color: var(--contentColor);
     margin-top: 0;
     font-size: var(--contentSize);
     line-height: 24px;
 }
+
 strong {
     font-size: var(--contentSize);
     font-weight: 500;
     color: var(--titleColor);
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 li {
     font-size: var(--contentSize);
     color: var(--contentColor);
     margin: 0 0 15px 0;
 }
+
 li:last-child {
     margin-bottom: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     padding: 0 0 16px;
     border: none;
@@ -107,9 +124,12 @@ input, textarea {
     margin-bottom: 32px;
     transition: all 0.3s;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     border-color: var(--primaryColor);
 }
+
 textarea {
     height: 100px;
 }
@@ -120,6 +140,7 @@ textarea {
     display: flex;
     background: var(--bgColor);
 }
+
 .sidebar {
     width: 360px;
     padding: 48px;
@@ -135,15 +156,18 @@ textarea {
     box-shadow: var(--boxShadow);
     z-index: 9;
 }
+
 .content {
     width: calc(100% - 360px);
     margin: 0 0 0 auto;
 }
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
     position: relative;
 }
+
 /* .container::before,
 .container::after {
     content: "";
@@ -161,13 +185,14 @@ textarea {
     left: unset;
     right: 0;
 } */
-.sectionLabel{
+.sectionLabel {
     font-weight: 300;
     padding-left: 32px;
     position: relative;
     display: inline-block;
     margin-bottom: 12px;
 }
+
 .sectionLabel::before {
     content: "";
     position: absolute;
@@ -178,11 +203,13 @@ textarea {
     height: 1px;
     background-color: var(--primaryColor);
 }
+
 .titleArea .title {
     font-size: var(--headingSizeMd);
     font-weight: 500;
     margin-bottom: 44px;
 }
+
 .btn {
     display: inline-block;
     padding: 12px 32px;
@@ -190,10 +217,12 @@ textarea {
     color: var(--whiteColor);
     transition: all 0.3s;
 }
+
 .btn:hover {
     background-color: var(--titleColor);
     color: var(--whiteColor);
 }
+
 .socialMedia {
     width: 100%;
     display: flex;
@@ -201,15 +230,18 @@ textarea {
     gap: 32px;
     margin-top: 24px;
 }
+
 .socialMedia a,
 .socialMedia svg {
     display: flex;
     transition: all 0.3s;
 }
+
 .socialMedia path {
     fill: var(--titleColor);
     transition: all 0.3s;
 }
+
 .socialMedia a:hover path {
     fill: var(--primaryColor);
 }
@@ -222,17 +254,21 @@ textarea {
     margin-bottom: 96px;
     position: relative;
 }
+
 .sidebar .logo img {
     object-fit: cover;
     border-radius: 50%;
 }
+
 .sidebar .navMenu {
     width: 100%;
     text-align: center;
 }
+
 .sidebar .navMenu li:not(:last-child) {
     margin-bottom: 32px;
 }
+
 .sidebar .socialMedia {
     justify-content: center;
     margin-top: 0;
@@ -251,9 +287,11 @@ textarea {
     display: none;
     z-index: 999;
 }
+
 .activeMenu .navigator {
     left: 324px;
 }
+
 .navigator .shape {
     width: 24px;
     height: 1px;
@@ -264,19 +302,24 @@ textarea {
     transform: translate(-50%, -50%);
     transition: all 0.3s;
 }
+
 .navigator .shape:first-child {
     top: calc(50% - 8px);
 }
+
 .navigator .shape:last-child {
     top: calc(50% + 8px);
 }
+
 .activeMenu .navigator .shape:first-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .activeMenu .navigator .shape:nth-child(2) {
     width: 0;
 }
+
 .activeMenu .navigator .shape:last-child {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -294,6 +337,7 @@ textarea {
     align-items: end;
     padding: 48px;
 }
+
 .heroArea .caption {
     width: 100%;
     max-width: 540px;
@@ -301,11 +345,13 @@ textarea {
     background-color: var(--bgColor);
     color: var(--titleColor);
 }
+
 .heroArea .caption .title {
     font-size: var(--headingSizeLg);
     font-weight: 500;
     margin-bottom: 16px;
 }
+
 .heroArea .caption .subTitle {
     color: var(--textColor);
     font-size: var(--titleSizeSm);
@@ -326,26 +372,32 @@ textarea {
     position: relative;
     z-index: 1;
 }
+
 .aboutArea .container {
     display: flex;
     gap: 56px;
 }
+
 .aboutArea .btn {
     margin-top: 32px;
 }
+
 .aboutArea .aboutImage {
     max-width: 400px;
     width: 100%;
 }
+
 .aboutArea .aboutImage img {
     width: 100%;
 }
+
 .aboutArea .personalDetails {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
     margin: 32px 0 0;
 }
+
 .aboutArea .personalDetails li {
     width: calc(50% - 16px);
     margin: 0;
@@ -360,6 +412,7 @@ textarea {
     background: url("images/bannerBg.jpeg") no-repeat center center / cover fixed;
     position: relative;
 }
+
 .experienceArea::before {
     content: "";
     position: absolute;
@@ -371,41 +424,49 @@ textarea {
     opacity: 0.9;
     z-index: 0;
 }
+
 .experienceArea .title {
     font-size: var(--headingSizeSm);
     padding-bottom: 12px;
     margin-bottom: 32px;
     border-bottom: 1px solid var(--borderColor);
 }
+
 .experienceArea .row {
     display: flex;
     gap: 56px;
 }
+
 .experienceArea .row .column {
     width: calc(50% - 28px);
 }
+
 .experienceArea .items {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
+
 .experienceArea .item {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
+
 .experienceArea .heading {
     display: flex;
     gap: 12px;
     justify-content: space-between;
     align-items: center;
 }
+
 .experienceArea .organization {
     font-size: var(--titleSizeSm);
     font-weight: 500;
     color: var(--titleColor);
     width: calc(100% - 140px);
 }
+
 .experienceArea .duration {
     background: var(--primaryColor);
     color: var(--secondaryColor);
@@ -420,17 +481,20 @@ textarea {
 .skillsArea {
     padding: var(--sectionPadding);
 }
+
 .skillsArea .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
+
 .skillsArea .skill {
     width: calc(100% / 3 - 16px);
     padding-left: 16px;
     margin: 0;
     position: relative;
 }
+
 .skillsArea .skill::before {
     content: "";
     position: absolute;
@@ -449,31 +513,37 @@ textarea {
     padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
+
 .serviceArea .serviceItems {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
+
 .serviceArea .serviceItem {
     width: calc(100% / 3 - 16px);
     background-color: var(--bgColor);
     padding: 32px;
     transition: all 0.3s;
 }
+
 .serviceArea .serviceItem:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .serviceArea .serviceIcon {
     margin-bottom: 12px;
 }
+
 .serviceArea .serviceTitle {
     font-size: var(--titleSizeLg);
     margin-bottom: 12px;
     padding-bottom: 16px;
     position: relative;
 }
+
 .serviceArea .serviceTitle::before {
     content: "";
     position: absolute;
@@ -484,12 +554,15 @@ textarea {
     background-color: var(--primaryColor);
     transition: all 0.3s;
 }
+
 .serviceArea .serviceItem:hover .serviceTitle::before {
     width: 100%;
 }
+
 .serviceArea .serviceContent {
     margin: 0;
 }
+
 .serviceArea .serviceLabel {
     display: inline-block;
     text-align: right;
@@ -510,22 +583,26 @@ textarea {
 .workArea {
     padding: var(--sectionPadding);
 }
+
 .workArea .workItems {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
+
 .workArea .workItem {
     display: flex;
     width: calc(100% / 3 - 16px);
     transition: all 0.3s;
     position: relative;
 }
+
 .workArea .workItem:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .workArea .workItem .caption {
     position: absolute;
     left: 0;
@@ -538,9 +615,11 @@ textarea {
     opacity: 0;
     transition: all 0.3s;
 }
+
 .workArea .workItem:hover .caption {
     opacity: 1;
 }
+
 .workArea .workItem .caption .workTitle {
     font-size: var(--titleSizeLg);
     font-weight: 500;
@@ -548,6 +627,7 @@ textarea {
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
+
 .workArea .workItem .caption .workContent {
     color: var(--whiteColor);
 }
@@ -561,6 +641,7 @@ textarea {
     text-align: center;
     position: relative;
 }
+
 .freelanceArea::before {
     content: "";
     position: absolute;
@@ -572,14 +653,17 @@ textarea {
     opacity: 0.9;
     z-index: 0;
 }
+
 .freelanceArea .container {
     position: relative;
     z-index: 1;
 }
+
 .freelanceArea .title {
     font-size: var(--headingSizeSm);
     margin-bottom: 16px;
 }
+
 .freelanceArea .freelanceText {
     margin-bottom: 32px;
 }
@@ -590,11 +674,13 @@ textarea {
 .caseStudyArea {
     padding: var(--sectionPadding);
 }
+
 .caseStudyArea .caseStudyItems {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
+
 .caseStudyArea .caseStudyItem {
     display: flex;
     flex-wrap: wrap;
@@ -602,12 +688,15 @@ textarea {
     transition: all 0.3s;
     position: relative;
 }
+
 .caseStudyArea .caption {
     margin-top: 12px;
 }
+
 .caseStudyArea .caseStudyLabel {
     margin: 0 0 6px;
 }
+
 .caseStudyArea .caseStudyTitle {
     font-size: var(--titleSizeLg);
 }
@@ -619,21 +708,25 @@ textarea {
     padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
+
 .funFactArea .funFactItems {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
     margin-top: 56px;
 }
+
 .funFactArea .funFactItem {
     width: calc(100% / 4 - 18px);
     text-align: left;
 }
+
 .funFactArea .funFactContent {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .funFactArea .funFactCount {
     font-size: var(--headingSizeSm);
 }
@@ -644,31 +737,82 @@ textarea {
 .contactArea {
     padding: var(--sectionPadding);
 }
+
 .contactArea .contentRow {
     display: flex;
     gap: 56px;
 }
+
 .contactArea .contentColumn {
     width: calc(50% - 28px);
 }
+
 .contactArea .personalDetails {
     margin: 32px 0;
 }
+
 .contactArea .inputRow {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
 }
+
 .contactArea .inputRow .formGroup {
     width: calc(50% - 16px);
 }
+
 .contactArea .btn {
     border: none;
     cursor: pointer;
 }
+
 #submissionStatus {
     color: var(--primaryColor);
     margin: 24px 0 0;
+}
+
+
+
+/* ===================== Project Details Area ===================== */
+.bannerArea {
+    padding: var(--sectionPadding);
+    background-color: var(--shadeBgColor);
+}
+.bannerArea .content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.bannerArea .breadcrumb {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+.bannerArea .breadcrumb a {
+    font-size: var(--contentSize);
+    color: var(--contentColor);
+}
+.bannerArea .breadcrumb a:hover {
+    color: var(--primaryColor);
+}
+
+
+
+.projectDetailsArea {
+    padding: var(--sectionPadding);
+}
+.projectDetailsArea .projectImages {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+.projectDetailsArea .projectImages .projectImage {
+    width: calc(100% / 2 - 12px);
+}
+.projectDetailsArea .projectImages .projectImage img {
+    width: 100%;
 }
 
 
@@ -678,20 +822,25 @@ textarea {
     padding: var(--sectionPadding);
     background-color: var(--shadeBgColor);
 }
+
 .footerArea .contentRow {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
+
 .footerArea .contentRow .footerColumn:first-child {
     width: calc(50% - 16px);
 }
+
 .footerArea .contentRow .footerColumn {
     width: calc(25% - 16px);
 }
+
 .footerArea .footerContent {
     max-width: 260px;
 }
+
 .footerArea .title {
     font-size: var(--titleSizeLg);
     margin-bottom: 24px;
@@ -705,6 +854,7 @@ textarea {
     text-align: center;
     margin: 0;
 }
+
 .socketArea p {
     font-size: var(--contentSizeSm);
     font-weight: 300;
@@ -721,6 +871,7 @@ textarea {
     .sidebar {
         width: 300px;
     }
+
     .content {
         width: calc(100% - 300px);
     }
@@ -734,17 +885,21 @@ textarea {
         display: block;
         transition: all 0.3s;
     }
+
     .sidebar {
         margin-left: -300px;
         transition: all 0.3s;
     }
+
     .content {
         width: 100%;
         transition: all 0.3s;
     }
+
     .activeMenu .sidebar {
         margin-left: 0;
     }
+
     .activeMenu .content {
         width: calc(100% + 300px);
         transform: translateX(300px);
@@ -755,6 +910,7 @@ textarea {
     .serviceArea .serviceItem {
         padding: 28px;
     }
+
     .serviceArea .serviceIcon svg {
         width: 30px;
         height: 30px;
@@ -766,6 +922,7 @@ textarea {
     .footerArea .contentRow .footerColumn:first-child {
         width: calc(40% - 16px);
     }
+
     .footerArea .contentRow .footerColumn {
         width: calc(30% - 16px);
     }
@@ -789,6 +946,7 @@ textarea {
     .heroArea {
         padding: 32px;
     }
+
     .heroArea .caption .title {
         font-size: 28px;
         margin-bottom: 12px;
@@ -800,9 +958,11 @@ textarea {
         flex-wrap: wrap;
         gap: 36px;
     }
+
     .aboutArea .personalDetails {
         gap: 16px;
     }
+
     .aboutArea .personalDetails li {
         width: calc(50% - 8px);
     }
@@ -812,6 +972,7 @@ textarea {
     .experienceArea .row {
         gap: 36px;
     }
+
     .experienceArea .row .column {
         width: calc(50% - 18px);
     }
@@ -836,6 +997,7 @@ textarea {
         gap: 48px;
         margin-top: 48px;
     }
+
     .funFactArea .funFactItem {
         width: calc(100% / 2 - 24px);
     }
@@ -845,6 +1007,7 @@ textarea {
     .footerArea .contentRow {
         gap: 36px;
     }
+
     .footerArea .contentRow .footerColumn:first-child,
     .footerArea .contentRow .footerColumn {
         width: 100%;
@@ -862,6 +1025,7 @@ textarea {
     .aboutArea .personalDetails li {
         width: 100%;
     }
+
     .aboutArea .aboutImage {
         max-width: 100%;
     }
@@ -871,6 +1035,7 @@ textarea {
     .experienceArea .row {
         flex-wrap: wrap;
     }
+
     .experienceArea .row .column {
         width: 100%;
     }
@@ -880,6 +1045,7 @@ textarea {
     .skillsArea .skills {
         gap: 20px;
     }
+
     .skillsArea .skill {
         width: 100%;
     }
@@ -904,14 +1070,17 @@ textarea {
         gap: 56px;
         flex-wrap: wrap;
     }
+
     .contactArea .contentColumn {
         width: 100%;
     }
+
     .contactArea .inputRow {
         gap: 0;
         flex-wrap: wrap;
         flex-direction: column;
     }
+
     .contactArea .inputRow .formGroup {
         width: 100%;
     }
